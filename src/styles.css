@@ -1,4 +1,13 @@
-.textBlue{
+/*idk why the font stuff isnt working maybe im othis*/
+@font-face {
+  font-family: 'ComforterBrush';
+  src: url(./ComforterBrush-Regular.ttf) format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.textBlue {
   color: blue;
-  background: url('./damnDaniel.jpg')
+  background: url('./damnDaniel.jpg');
+  font-family: 'ComforterBrush';
 }

@@ -2,7 +2,8 @@
 import myName from './myName';
 import './styles.css'
 import damnDaniel from './damnDaniel.jpg'
-
+import data from './data.xml'
+import notes from './data.csv'
 function component() {
   const element = document.createElement('div');
 
@@ -14,6 +15,9 @@ function component() {
   const myIcon = new Image();
   myIcon.src = damnDaniel
   element.appendChild(myIcon);
+  
+  console.log(data);
+  console.log(notes);
   return element;
 }
 
