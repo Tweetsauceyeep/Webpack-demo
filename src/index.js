@@ -1,4 +1,5 @@
-// import _, {multiply} from 'lodash'
+// import _, {multiply} from 'lodash' just need to change something dont mind
+
 import myName from './myName';
 import './styles.css'
 import damnDaniel from './damnDaniel.jpg'
