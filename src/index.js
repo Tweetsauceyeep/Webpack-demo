@@ -1,6 +1,7 @@
 // import _, {multiply} from 'lodash'
 import myName from './myName';
 import './styles.css'
+import damnDaniel from './damnDaniel.jpg'
 
 function component() {
   const element = document.createElement('div');
@@ -9,6 +10,10 @@ function component() {
   //element.innerHTML = _.join(['Hello', 'Webpack'], ' ');
   element.innerHTML = myName('ethan')
   element.classList.add('textBlue')
+
+  const myIcon = new Image();
+  myIcon.src = damnDaniel
+  element.appendChild(myIcon);
   return element;
 }
 
