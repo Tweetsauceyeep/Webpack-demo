@@ -1,24 +1,15 @@
-// import _, {multiply} from 'lodash' just need to change something dont mind
+import _ from 'lodash';
+import printMe from './print.js';
 
-import myName from './myName';
-import './styles.css'
-import damnDaniel from './damnDaniel.jpg'
-import data from './data.xml'
-import notes from './data.csv'
+
 function component() {
   const element = document.createElement('div');
+  const button = document.createElement('button');
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-  // lodash is needed for this line in the script to work (was included before using a link in the html file )
-  //element.innerHTML = _.join(['Hello', 'Webpack'], ' ');
-  element.innerHTML = myName('ethan')
-  element.classList.add('textBlue')
-
-  const myIcon = new Image();
-  myIcon.src = damnDaniel
-  element.appendChild(myIcon);
-  
-  console.log(data);
-  console.log(notes);
+  button.innerHTML = 'click me plz and check ur console bro';
+  button.onclick = printMe();
+  element.appendChild(button)
   return element;
 }
 
