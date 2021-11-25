@@ -1,7 +1,6 @@
 import _ from 'lodash';
 import printMe from './print.js';
 
-
 function component() {
   const element = document.createElement('div');
   const button = document.createElement('button');
@@ -9,7 +8,7 @@ function component() {
 
   button.innerHTML = 'click me plz and check ur console bro';
   button.onclick = printMe();
-  element.appendChild(button)
+  element.appendChild(button);
   return element;
 }
 
